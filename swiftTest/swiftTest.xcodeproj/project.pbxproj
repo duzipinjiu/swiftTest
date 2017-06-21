@@ -33,6 +33,7 @@
 		04F449881EFA18CA005312E3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F449871EFA18CA005312E3 /* CFNetwork.framework */; };
 		04F4498A1EFA18EA005312E3 /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F449891EFA18EA005312E3 /* libstdc++.6.tbd */; };
 		04F4498C1EFA1B60005312E3 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F4498B1EFA1B60005312E3 /* CoreTelephony.framework */; };
+		04F449CA1EFA3DCF005312E3 /* CommUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F449C91EFA3DCF005312E3 /* CommUtils.swift */; };
 		5716152BEFDB30AB763A8B07 /* Pods_swiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05467D13023F0619974BF8C7 /* Pods_swiftTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		04F449891EFA18EA005312E3 /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
 		04F4498B1EFA1B60005312E3 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		04F4498D1EFA1DFE005312E3 /* swiftTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swiftTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		04F449C91EFA3DCF005312E3 /* CommUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommUtils.swift; sourceTree = "<group>"; };
 		05467D13023F0619974BF8C7 /* Pods_swiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6325FFCAB47D4D2701EE38 /* Pods-swiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftTest/Pods-swiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4CE61AC164C9E32E224A34BD /* Pods-swiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftTest/Pods-swiftTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				04F4497B1EFA17FB005312E3 /* Common.swift */,
+				04F449C91EFA3DCF005312E3 /* CommUtils.swift */,
 				04F4497C1EFA17FB005312E3 /* HUDTool.swift */,
 				04F4497D1EFA17FB005312E3 /* ISecNetworkTool.swift */,
 				04F4498D1EFA1DFE005312E3 /* swiftTest-Bridging-Header.h */,
@@ -324,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04F449CA1EFA3DCF005312E3 /* CommUtils.swift in Sources */,
 				04F4497E1EFA17FB005312E3 /* Common.swift in Sources */,
 				04F449711EFA17D8005312E3 /* UIBarButtonItem-Extension.swift in Sources */,
 				04F449731EFA17D8005312E3 /* UIColor-Extension.swift in Sources */,
