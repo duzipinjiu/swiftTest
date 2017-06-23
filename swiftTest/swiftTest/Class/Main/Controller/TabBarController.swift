@@ -80,7 +80,7 @@ class TabBarController : UITabBarController{
         let trueClass = vcClass as! UIViewController.Type
         let childController = trueClass.init()
         childController.tabBarItem.title = title
-        childController.view.backgroundColor = UIColor.white
+//        childController.view.backgroundColor = UIColor.white
         
         childController.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
         childController.tabBarItem.selectedImage = UIImage(named: imageName + "_h")?.withRenderingMode(.alwaysOriginal)

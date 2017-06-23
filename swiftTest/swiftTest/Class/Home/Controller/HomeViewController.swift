@@ -12,14 +12,9 @@ class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
+        view.backgroundColor = UIColor.red
         printLog(message: "HomeVC")
-        let lab = UILabel.init(frame: CGRect.init(x: 0, y: 64, width: 80, height: 80))
-        lab.backgroundColor = UIColor.black
-        
-        view.addSubview(lab)
         
     }
     
@@ -37,6 +32,29 @@ class HomeViewController: BaseViewController {
         navigationController?.pushViewController(homeDetailVC, animated: true)
     }
 
+    override func loadData() {
+        super.loadData()
+        
+        let url = AppRootUrl + "/article/Article/getSpecials"
+        NetworkTool.request(type: .POST, urlString: url, paramters: nil, finishedCallback: {[weak self] (result) in
+            let dataArr = result["data"]
+            
+//            if let arr = dataArr.arrayObject{
+//                self?.spericalModels = []
+//                for dict in arr  {
+//                    let model = SpecialModel.init(dict: (dict as? Dictionary)!)
+//                    
+//                    self?.spericalModels.append(model)
+//                }
+//            }
+//            success(result)
+            printLog(message: result)
+        }) { (error) in
+            
+        }
+
+    }
+    
     /*
     // MARK: - Navigation
 

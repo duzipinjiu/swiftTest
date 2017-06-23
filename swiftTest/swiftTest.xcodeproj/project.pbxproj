@@ -27,7 +27,6 @@
 		04F449791EFA17D8005312E3 /* UITextView-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4496C1EFA17D8005312E3 /* UITextView-Extension.swift */; };
 		04F4497E1EFA17FB005312E3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4497B1EFA17FB005312E3 /* Common.swift */; };
 		04F4497F1EFA17FB005312E3 /* HUDTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4497C1EFA17FB005312E3 /* HUDTool.swift */; };
-		04F449801EFA17FB005312E3 /* ISecNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4497D1EFA17FB005312E3 /* ISecNetworkTool.swift */; };
 		04F449821EFA1864005312E3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F449811EFA1864005312E3 /* libz.tbd */; };
 		04F449861EFA18B0005312E3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F449851EFA18B0005312E3 /* SystemConfiguration.framework */; };
 		04F449881EFA18CA005312E3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F449871EFA18CA005312E3 /* CFNetwork.framework */; };
@@ -61,6 +60,11 @@
 		04FAD6701EFB587000849CDF /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD66F1EFB587000849CDF /* FindViewController.swift */; };
 		04FAD6721EFB58C300849CDF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD6711EFB58C300849CDF /* ProfileViewController.swift */; };
 		04FAD80D1EFB8FCF00849CDF /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD80C1EFB8FCF00849CDF /* HomeDetailViewController.swift */; };
+		04FAD9331EFBB53600849CDF /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD9321EFBB53600849CDF /* NetworkTool.swift */; };
+		04FAD9381EFBB8C700849CDF /* ArticleDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD9341EFBB8C700849CDF /* ArticleDetailModel.swift */; };
+		04FAD9391EFBB8C700849CDF /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD9351EFBB8C700849CDF /* ArticleListModel.swift */; };
+		04FAD93A1EFBB8C700849CDF /* BarnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD9361EFBB8C700849CDF /* BarnerModel.swift */; };
+		04FAD93B1EFBB8C700849CDF /* SpecialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD9371EFBB8C700849CDF /* SpecialModel.swift */; };
 		5716152BEFDB30AB763A8B07 /* Pods_swiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05467D13023F0619974BF8C7 /* Pods_swiftTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -87,7 +91,6 @@
 		04F4496C1EFA17D8005312E3 /* UITextView-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView-Extension.swift"; sourceTree = "<group>"; };
 		04F4497B1EFA17FB005312E3 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		04F4497C1EFA17FB005312E3 /* HUDTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDTool.swift; sourceTree = "<group>"; };
-		04F4497D1EFA17FB005312E3 /* ISecNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISecNetworkTool.swift; sourceTree = "<group>"; };
 		04F449811EFA1864005312E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		04F449831EFA187C005312E3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		04F449851EFA18B0005312E3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,11 @@
 		04FAD66F1EFB587000849CDF /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		04FAD6711EFB58C300849CDF /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04FAD80C1EFB8FCF00849CDF /* HomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		04FAD9321EFBB53600849CDF /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
+		04FAD9341EFBB8C700849CDF /* ArticleDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailModel.swift; sourceTree = "<group>"; };
+		04FAD9351EFBB8C700849CDF /* ArticleListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListModel.swift; sourceTree = "<group>"; };
+		04FAD9361EFBB8C700849CDF /* BarnerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarnerModel.swift; sourceTree = "<group>"; };
+		04FAD9371EFBB8C700849CDF /* SpecialModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialModel.swift; sourceTree = "<group>"; };
 		05467D13023F0619974BF8C7 /* Pods_swiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6325FFCAB47D4D2701EE38 /* Pods-swiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftTest/Pods-swiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4CE61AC164C9E32E224A34BD /* Pods-swiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftTest/Pods-swiftTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,10 +240,10 @@
 		04F4497A1EFA17FB005312E3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				04FAD9321EFBB53600849CDF /* NetworkTool.swift */,
 				04F4497B1EFA17FB005312E3 /* Common.swift */,
 				04F449C91EFA3DCF005312E3 /* CommUtils.swift */,
 				04F4497C1EFA17FB005312E3 /* HUDTool.swift */,
-				04F4497D1EFA17FB005312E3 /* ISecNetworkTool.swift */,
 				04F4498D1EFA1DFE005312E3 /* swiftTest-Bridging-Header.h */,
 			);
 			path = Utils;
@@ -263,6 +271,10 @@
 		04F449CD1EFA4446005312E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04FAD9341EFBB8C700849CDF /* ArticleDetailModel.swift */,
+				04FAD9351EFBB8C700849CDF /* ArticleListModel.swift */,
+				04FAD9361EFBB8C700849CDF /* BarnerModel.swift */,
+				04FAD9371EFBB8C700849CDF /* SpecialModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -589,7 +601,10 @@
 				04F449CA1EFA3DCF005312E3 /* CommUtils.swift in Sources */,
 				04F449E01EFA694D005312E3 /* RefreshHeaderView.swift in Sources */,
 				04F449DF1EFA694D005312E3 /* RefreshFooterView.swift in Sources */,
+				04FAD9391EFBB8C700849CDF /* ArticleListModel.swift in Sources */,
+				04FAD9381EFBB8C700849CDF /* ArticleDetailModel.swift in Sources */,
 				04F4497E1EFA17FB005312E3 /* Common.swift in Sources */,
+				04FAD9331EFBB53600849CDF /* NetworkTool.swift in Sources */,
 				04F449711EFA17D8005312E3 /* UIBarButtonItem-Extension.swift in Sources */,
 				04F449731EFA17D8005312E3 /* UIColor-Extension.swift in Sources */,
 				04F44A021EFA6A27005312E3 /* Right.swift in Sources */,
@@ -601,6 +616,7 @@
 				04FAD80D1EFB8FCF00849CDF /* HomeDetailViewController.swift in Sources */,
 				04F4496F1EFA17D8005312E3 /* String-Extension.swift in Sources */,
 				04F449FF1EFA6A27005312E3 /* Header.swift in Sources */,
+				04FAD93B1EFBB8C700849CDF /* SpecialModel.swift in Sources */,
 				04F449FC1EFA6A27005312E3 /* ElasticRefreshControl.swift in Sources */,
 				0460640D1EAAE45B007161C3 /* ViewController.swift in Sources */,
 				04F449761EFA17D8005312E3 /* UIImage-Extenstion.swift in Sources */,
@@ -608,13 +624,13 @@
 				04F449721EFA17D8005312E3 /* UIButton-Extension.swift in Sources */,
 				04F449751EFA17D8005312E3 /* UIFont-Extentsion.swift in Sources */,
 				04F449791EFA17D8005312E3 /* UITextView-Extension.swift in Sources */,
+				04FAD93A1EFBB8C700849CDF /* BarnerModel.swift in Sources */,
 				04F449D81EFA446C005312E3 /* TabBarController.swift in Sources */,
 				04F4497F1EFA17FB005312E3 /* HUDTool.swift in Sources */,
 				04FAD66E1EFB57DF00849CDF /* HomeViewController.swift in Sources */,
 				04F449DC1EFA683C005312E3 /* BaseView.swift in Sources */,
 				04F449DA1EFA67D5005312E3 /* HintView.swift in Sources */,
 				04FAD6701EFB587000849CDF /* FindViewController.swift in Sources */,
-				04F449801EFA17FB005312E3 /* ISecNetworkTool.swift in Sources */,
 				04FAD6721EFB58C300849CDF /* ProfileViewController.swift in Sources */,
 				04F449701EFA17D8005312E3 /* UIAlertController-Extension.swift in Sources */,
 				04F449771EFA17D8005312E3 /* UIImageView-Extension.swift in Sources */,
