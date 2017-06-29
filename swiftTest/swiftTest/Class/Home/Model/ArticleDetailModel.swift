@@ -22,7 +22,7 @@ class ArticleDetailModel: BaseModel {
     //MARK:- 分享描述
     var Description:String = ""
     //MARK:- 图片
-    var Covers:String = ""
+    var Covers:NSArray = [NSString]() as NSArray
     
    
     

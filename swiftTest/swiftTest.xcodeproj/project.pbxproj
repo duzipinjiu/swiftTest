@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0416260E1F04E10C001F9A19 /* ArticleNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416260D1F04E10C001F9A19 /* ArticleNormalCell.swift */; };
+		041626101F04E153001F9A19 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0416260F1F04E153001F9A19 /* BaseCollectionViewCell.swift */; };
+		041626121F04E1DE001F9A19 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041626111F04E1DE001F9A19 /* ArticleListViewController.swift */; };
+		041626141F04E809001F9A19 /* JJContentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041626131F04E809001F9A19 /* JJContentTableView.swift */; };
+		043B5BE31EFCC3B5001D4410 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B5BE11EFCC3B5001D4410 /* PageContentView.swift */; };
+		043B5BE41EFCC3B5001D4410 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B5BE21EFCC3B5001D4410 /* PageTitleView.swift */; };
+		043B5BE61EFCC421001D4410 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B5BE51EFCC421001D4410 /* BaseModel.swift */; };
+		043B5BE81EFCC4DE001D4410 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043B5BE71EFCC4DE001D4410 /* ArticleListViewModel.swift */; };
 		0460640B1EAAE45B007161C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460640A1EAAE45B007161C3 /* AppDelegate.swift */; };
 		0460640D1EAAE45B007161C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0460640C1EAAE45B007161C3 /* ViewController.swift */; };
 		046064101EAAE45B007161C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0460640E1EAAE45B007161C3 /* Main.storyboard */; };
@@ -69,6 +77,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0416260D1F04E10C001F9A19 /* ArticleNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleNormalCell.swift; sourceTree = "<group>"; };
+		0416260F1F04E153001F9A19 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		041626111F04E1DE001F9A19 /* ArticleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		041626131F04E809001F9A19 /* JJContentTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJContentTableView.swift; sourceTree = "<group>"; };
+		043B5BE11EFCC3B5001D4410 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		043B5BE21EFCC3B5001D4410 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		043B5BE51EFCC421001D4410 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		043B5BE71EFCC4DE001D4410 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
 		046064071EAAE45B007161C3 /* swiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0460640A1EAAE45B007161C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0460640C1EAAE45B007161C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +171,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		043B5BE01EFCC3B5001D4410 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				043B5BE11EFCC3B5001D4410 /* PageContentView.swift */,
+				043B5BE21EFCC3B5001D4410 /* PageTitleView.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
 		046063FE1EAAE45B007161C3 = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +289,7 @@
 			children = (
 				04FAD66D1EFB57DF00849CDF /* HomeViewController.swift */,
 				04FAD80C1EFB8FCF00849CDF /* HomeDetailViewController.swift */,
+				041626111F04E1DE001F9A19 /* ArticleListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -271,6 +297,7 @@
 		04F449CD1EFA4446005312E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				043B5BE71EFCC4DE001D4410 /* ArticleListViewModel.swift */,
 				04FAD9341EFBB8C700849CDF /* ArticleDetailModel.swift */,
 				04FAD9351EFBB8C700849CDF /* ArticleListModel.swift */,
 				04FAD9361EFBB8C700849CDF /* BarnerModel.swift */,
@@ -282,6 +309,9 @@
 		04F449CE1EFA4446005312E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				041626131F04E809001F9A19 /* JJContentTableView.swift */,
+				0416260D1F04E10C001F9A19 /* ArticleNormalCell.swift */,
+				043B5BE01EFCC3B5001D4410 /* PageView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +340,7 @@
 		04F449D11EFA4446005312E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				043B5BE51EFCC421001D4410 /* BaseModel.swift */,
 				04FAD6251EFB4D0B00849CDF /* BaseViewModel.swift */,
 			);
 			path = Model;
@@ -318,6 +349,7 @@
 		04F449D21EFA4446005312E3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0416260F1F04E153001F9A19 /* BaseCollectionViewCell.swift */,
 				04F449DB1EFA683C005312E3 /* BaseView.swift */,
 				04F449D91EFA67D5005312E3 /* HintView.swift */,
 				04F449DD1EFA694D005312E3 /* RefreshFooterView.swift */,
@@ -613,12 +645,14 @@
 				04F44A031EFA6A27005312E3 /* Utils.swift in Sources */,
 				04F449741EFA17D8005312E3 /* UIDevice-Extension.swift in Sources */,
 				04F449D61EFA446C005312E3 /* BaseViewController.swift in Sources */,
+				0416260E1F04E10C001F9A19 /* ArticleNormalCell.swift in Sources */,
 				04FAD80D1EFB8FCF00849CDF /* HomeDetailViewController.swift in Sources */,
 				04F4496F1EFA17D8005312E3 /* String-Extension.swift in Sources */,
 				04F449FF1EFA6A27005312E3 /* Header.swift in Sources */,
 				04FAD93B1EFBB8C700849CDF /* SpecialModel.swift in Sources */,
 				04F449FC1EFA6A27005312E3 /* ElasticRefreshControl.swift in Sources */,
 				0460640D1EAAE45B007161C3 /* ViewController.swift in Sources */,
+				041626101F04E153001F9A19 /* BaseCollectionViewCell.swift in Sources */,
 				04F449761EFA17D8005312E3 /* UIImage-Extenstion.swift in Sources */,
 				04F4496E1EFA17D8005312E3 /* PageControll.swift in Sources */,
 				04F449721EFA17D8005312E3 /* UIButton-Extension.swift in Sources */,
@@ -631,15 +665,21 @@
 				04F449DC1EFA683C005312E3 /* BaseView.swift in Sources */,
 				04F449DA1EFA67D5005312E3 /* HintView.swift in Sources */,
 				04FAD6701EFB587000849CDF /* FindViewController.swift in Sources */,
+				043B5BE81EFCC4DE001D4410 /* ArticleListViewModel.swift in Sources */,
 				04FAD6721EFB58C300849CDF /* ProfileViewController.swift in Sources */,
+				041626121F04E1DE001F9A19 /* ArticleListViewController.swift in Sources */,
 				04F449701EFA17D8005312E3 /* UIAlertController-Extension.swift in Sources */,
+				043B5BE31EFCC3B5001D4410 /* PageContentView.swift in Sources */,
 				04F449771EFA17D8005312E3 /* UIImageView-Extension.swift in Sources */,
 				0460640B1EAAE45B007161C3 /* AppDelegate.swift in Sources */,
 				04F449781EFA17D8005312E3 /* UILable-Extension.swift in Sources */,
 				04F449D71EFA446C005312E3 /* NavigationController.swift in Sources */,
 				04FAD6261EFB4D0B00849CDF /* BaseViewModel.swift in Sources */,
 				04F44A011EFA6A27005312E3 /* PullToRefresh.swift in Sources */,
+				043B5BE41EFCC3B5001D4410 /* PageTitleView.swift in Sources */,
+				041626141F04E809001F9A19 /* JJContentTableView.swift in Sources */,
 				04F449FD1EFA6A27005312E3 /* ElasticRefreshHeader.swift in Sources */,
+				043B5BE61EFCC421001D4410 /* BaseModel.swift in Sources */,
 				04F4496D1EFA17D8005312E3 /* Date-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
