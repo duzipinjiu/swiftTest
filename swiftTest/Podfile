@@ -6,4 +6,7 @@ pod 'Kingfisher'
 pod 'SnapKit'
 pod 'SwiftyJSON'
 pod 'SVProgressHUD'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'MBProgressHUD'
 end
