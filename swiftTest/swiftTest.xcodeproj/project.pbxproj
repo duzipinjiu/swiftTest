@@ -20,6 +20,7 @@
 		046064101EAAE45B007161C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0460640E1EAAE45B007161C3 /* Main.storyboard */; };
 		046064121EAAE45B007161C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046064111EAAE45B007161C3 /* Assets.xcassets */; };
 		046064151EAAE45B007161C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046064131EAAE45B007161C3 /* LaunchScreen.storyboard */; };
+		048270231F06270C001C1911 /* TANGWEI.m in Sources */ = {isa = PBXBuildFile; fileRef = 048270221F06270C001C1911 /* TANGWEI.m */; };
 		04F4496D1EFA17D8005312E3 /* Date-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F449601EFA17D8005312E3 /* Date-Extension.swift */; };
 		04F4496E1EFA17D8005312E3 /* PageControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F449611EFA17D8005312E3 /* PageControll.swift */; };
 		04F4496F1EFA17D8005312E3 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F449621EFA17D8005312E3 /* String-Extension.swift */; };
@@ -92,6 +93,9 @@
 		046064111EAAE45B007161C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046064141EAAE45B007161C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046064161EAAE45B007161C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048270201F06253E001C1911 /* swiftTest-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swiftTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		048270211F06270C001C1911 /* TANGWEI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TANGWEI.h; sourceTree = "<group>"; };
+		048270221F06270C001C1911 /* TANGWEI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TANGWEI.m; sourceTree = "<group>"; };
 		04F449601EFA17D8005312E3 /* Date-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Extension.swift"; sourceTree = "<group>"; };
 		04F449611EFA17D8005312E3 /* PageControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControll.swift; sourceTree = "<group>"; };
 		04F449621EFA17D8005312E3 /* String-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
@@ -203,6 +207,9 @@
 			children = (
 				0460640A1EAAE45B007161C3 /* AppDelegate.swift */,
 				0460640C1EAAE45B007161C3 /* ViewController.swift */,
+				048270201F06253E001C1911 /* swiftTest-Bridging-Header.h */,
+				048270211F06270C001C1911 /* TANGWEI.h */,
+				048270221F06270C001C1911 /* TANGWEI.m */,
 				0460640E1EAAE45B007161C3 /* Main.storyboard */,
 				046064111EAAE45B007161C3 /* Assets.xcassets */,
 				046064131EAAE45B007161C3 /* LaunchScreen.storyboard */,
@@ -669,6 +676,7 @@
 				04FAD6721EFB58C300849CDF /* ProfileViewController.swift in Sources */,
 				041626121F04E1DE001F9A19 /* ArticleListViewController.swift in Sources */,
 				04F449701EFA17D8005312E3 /* UIAlertController-Extension.swift in Sources */,
+				048270231F06270C001C1911 /* TANGWEI.m in Sources */,
 				043B5BE31EFCC3B5001D4410 /* PageContentView.swift in Sources */,
 				04F449771EFA17D8005312E3 /* UIImageView-Extension.swift in Sources */,
 				0460640B1EAAE45B007161C3 /* AppDelegate.swift in Sources */,
@@ -818,7 +826,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangwei.swiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "swiftTest/Class/Tool/Utils/swiftTest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/swiftTest/swiftTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -834,7 +842,7 @@
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangwei.swiftTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "swiftTest/Class/Tool/Utils/swiftTest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/swiftTest/swiftTest-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
