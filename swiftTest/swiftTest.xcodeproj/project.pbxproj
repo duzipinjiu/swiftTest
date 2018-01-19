@@ -76,6 +76,7 @@
 		04FAD93B1EFBB8C700849CDF /* SpecialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FAD9371EFBB8C700849CDF /* SpecialModel.swift */; };
 		5716152BEFDB30AB763A8B07 /* Pods_swiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05467D13023F0619974BF8C7 /* Pods_swiftTest.framework */; };
 		D134B2FC1FF09E57009423FF /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = D134B2FB1FF09E57009423FF /* Localization.strings */; };
+		D194A6B320106C9100239A04 /* ArticleList.json in Resources */ = {isa = PBXBuildFile; fileRef = D194A6B220106C9100239A04 /* ArticleList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +159,7 @@
 		4B6325FFCAB47D4D2701EE38 /* Pods-swiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftTest/Pods-swiftTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4CE61AC164C9E32E224A34BD /* Pods-swiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftTest/Pods-swiftTest.release.xcconfig"; sourceTree = "<group>"; };
 		D134B2FB1FF09E57009423FF /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		D194A6B220106C9100239A04 /* ArticleList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ArticleList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 				04FAD9351EFBB8C700849CDF /* ArticleListModel.swift */,
 				04FAD9361EFBB8C700849CDF /* BarnerModel.swift */,
 				04FAD9371EFBB8C700849CDF /* SpecialModel.swift */,
+				D194A6B220106C9100239A04 /* ArticleList.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 				04F449FA1EFA6A27005312E3 /* failure@3x.png in Resources */,
 				D134B2FC1FF09E57009423FF /* Localization.strings in Resources */,
 				046064101EAAE45B007161C3 /* Main.storyboard in Resources */,
+				D194A6B320106C9100239A04 /* ArticleList.json in Resources */,
 				04F449FB1EFA6A27005312E3 /* success@3x.png in Resources */,
 				04F449F91EFA6A27005312E3 /* Localize.strings in Resources */,
 				04F449F71EFA6A27005312E3 /* arrow_left@3x.png in Resources */,

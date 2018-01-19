@@ -57,28 +57,50 @@ class ArticleListViewController: BaseViewController ,UITableViewDelegate,UITable
         super.viewWillAppear(animated)
         self.SpecialID = self.articleViewModel.SpecialID
         self.loadArticleListData(successCallBack: { (result) in
-//            let dataArr = result["data"]["data"]
-//            var newModelArr = [ArticleDetailModel]()
-//            if let arr = dataArr.arrayObject{
-//                
-//                for dict in arr  {
-//                    let model = ArticleListModel.init(dict: (dict as? Dictionary)!)
-//                    model.articleListType = (self?.articleListType)!
-//                    newModelArr.append(model)
-//                }
-//            }
-            let tempArr:Array<NSDictionary> = result["data"]["data"].arrayObject as! Array<NSDictionary>
-            for (_,dict) in (tempArr.enumerated()){
+            let jsonPath = Bundle.main.path(forResource: "ArticleList", ofType: "json")
+            let data = NSData.init(contentsOfFile: jsonPath!)
+            let jsonDic:NSDictionary = try! JSONSerialization.jsonObject(with: data! as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+            let jsonTemp:NSDictionary = jsonDic.object(forKey: "data") as! NSDictionary
+            
+            let tempArr1:Array<NSDictionary> = jsonTemp.object(forKey: "data")as! Array<NSDictionary>
+            for (_,dict) in (tempArr1.enumerated()){
                 let model = ArticleDetailModel.init(dict: (dict as? Dictionary)!)
                 self.contentArrM.add(model)
             }
             self.tableview.reloadData()
-            printLog(message: result)
+            if result["data"].isEmpty{
+                return
+            }
+//            let tempArr:Array<NSDictionary> = result["data"]["data"].arrayObject as! Array<NSDictionary>
+//            for (_,dict) in (tempArr.enumerated()){
+//                let model = ArticleDetailModel.init(dict: (dict as? Dictionary)!)
+//                self.contentArrM.add(model)
+//            }
+//            self.tableview.reloadData()
+//            printLog(message: result)
         }) { (error) in
             
         }
     }
-    
+    func prepareFileManger(fileName: String,text: String) -> (String,URL){
+        //get userDirectory path
+        let manager = FileManager.default
+        let document = manager.urls(for: .documentDirectory, in: .userDomainMask)
+        let docURL = document.first!
+        
+        //read return file content or create blank file
+        let fileURL = docURL.appendingPathComponent(fileName)
+        
+        if manager.fileExists(atPath: fileURL.path) {
+            if let content = manager.contents(atPath: fileURL.path),let text = String(data: content, encoding: .utf8){
+                
+                return (text,fileURL)
+            }else {
+                manager.createFile(atPath: fileURL.path, contents: nil, attributes: nil)
+            }
+        }
+        return ("",fileURL)
+    }
     var articleListArr:[ArticleListModel] = []
     //MARK:- 文章ID
     lazy var SpecialID:Int = -1
