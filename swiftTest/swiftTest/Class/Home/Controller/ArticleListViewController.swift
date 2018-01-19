@@ -239,6 +239,8 @@ class ArticleListViewController: BaseViewController ,UITableViewDelegate,UITable
         let model = self.contentArrM[indexPath.row] as? ArticleDetailModel
         
         cell?.textLabel?.text = model?.title//"这是第\(indexPath.section+1)个字段,第\(indexPath.row)个cell"
+//        cell?.imageView?.sd_setImage(with: URL.init(string: (model!.Covers[0] as! String)) as! URL)
+        cell?.imageView?.kf_setImage(imageUrlStr: (model!.Covers[0] as! String))
         return cell!
     }
 
