@@ -12,5 +12,6 @@
 //#import "MJRefresh.h"
 #import "TANGWEI.h"
 #import <CommonCrypto/CommonDigest.h>
+#import <SDWebImage/UIImageView+WebCache.h>
 
 #endif /* swiftTest_Bridging_Header_h */

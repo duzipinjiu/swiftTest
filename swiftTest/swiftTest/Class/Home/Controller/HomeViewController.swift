@@ -26,7 +26,7 @@ class HomeViewController: BaseViewController {
     // MARK:- 懒加载属性
     fileprivate lazy var pageTitleView: PageTitleView = {[weak self] in
         let titleFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 40)
-        let titles = self?.titleArrM//["推荐", "游戏", "娱乐", "体育"]
+        let titles = ["推荐", "游戏", "娱乐", "体育"]//self?.titleArrM//
         let titleView = PageTitleView(frame: titleFrame, titles: titles as! [String])
         titleView.delegate = self
         return titleView
@@ -38,9 +38,16 @@ class HomeViewController: BaseViewController {
         
         // 2.确定所有的子控制器
         var childVcs = [UIViewController]()
-        for _ in 0..<4 {
-            let vc = UIViewController()
+        for a in 0..<4 {
+            let controller = ArticleListViewController()
+            let vc = ArticleListViewController()
             vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255))/255.0, green: CGFloat(arc4random_uniform(255))/255.0, blue: CGFloat(arc4random_uniform(255))/255.0, alpha: 1.0)
+            
+            let lable = UILabel.init(frame: CGRect.init(x: 30, y: 40, width: 50, height: 60))
+            var stringA = "第 \(a) 页 "
+            lable.text = stringA
+            lable.textColor = UIColor.black
+            vc.view.addSubview(lable)
             childVcs.append(vc)
         }
         let pageContentView = PageContentView(frame: contentFrame, childVcs: childVcs, parentViewController: self)
@@ -73,27 +80,32 @@ class HomeViewController: BaseViewController {
 
     override func loadData() {
         super.loadData()
-        
-        let url = AppRootUrl + "/article/Article/getSpecials"
-        NetworkTool.request(type: .POST, urlString: url, paramters: nil, finishedCallback: {[weak self] (result) in
-
-            let dataArr:Array<NSDictionary> = result["data"].arrayObject as! Array<NSDictionary>
-            for (_,dict) in (dataArr.enumerated()){
-                let aaa = dict["Name"]
-                self?.titleArrM .add(aaa)
-                let model = SpecialModel.init(dict: (dict as? Dictionary)!)
-                self?.matchArrM.add(model)
-            }
-            if dataArr.count > 0{
-                self?.requestBySpecialID(index: 0)
-            }
-//            success(result)
-            
-            self?.setupUI()
-            printLog(message: result)
-        }) { (error) in
-            
-        }
+        let model1 = SpecialModel.init()
+        model1.SpecialID = 1
+        model1.Name = "米兰"
+        model1.Weight = 200
+        self.matchArrM.add(model1)
+        self.setupUI()
+//        let url = AppRootUrl + "/article/Article/getSpecials"
+//        NetworkTool.request(type: .POST, urlString: url, paramters: nil, finishedCallback: {[weak self] (result) in
+//
+//            let dataArr:Array<NSDictionary> = result["data"].arrayObject as! Array<NSDictionary>
+//            for (_,dict) in (dataArr.enumerated()){
+//                let aaa = dict["Name"]
+//                self?.titleArrM .add(aaa)
+//                let model = SpecialModel.init(dict: (dict as? Dictionary)!)
+//                self?.matchArrM.add(model)
+//            }
+//            if dataArr.count > 0{
+//                self?.requestBySpecialID(index: 0)
+//            }
+////            success(result)
+//
+//            self?.setupUI()
+//            printLog(message: result)
+//        }) { (error) in
+//
+//        }
 
     }
  
@@ -176,11 +188,12 @@ class HomeViewController: BaseViewController {
         let model = self.matchArrM[index] as! SpecialModel
         self.SpecialID = model.SpecialID
         self.articleListType = .Home
-        self.loadArticleListData(successCallBack: { (result) in
-            self.setupChildVcs()
-        }) { (error) in
-            
-        }
+//        self.loadArticleListData(successCallBack: { (result) in
+//            self.setupChildVcs()
+//        }) { (error) in
+//
+//        }
+        self.setupChildVcs()
     }
     // MARK: -  设置界面
     func setupChildVcs(){
