@@ -71,13 +71,6 @@ class ArticleListViewController: BaseViewController ,UITableViewDelegate,UITable
             if result["data"].isEmpty{
                 return
             }
-//            let tempArr:Array<NSDictionary> = result["data"]["data"].arrayObject as! Array<NSDictionary>
-//            for (_,dict) in (tempArr.enumerated()){
-//                let model = ArticleDetailModel.init(dict: (dict as? Dictionary)!)
-//                self.contentArrM.add(model)
-//            }
-//            self.tableview.reloadData()
-//            printLog(message: result)
         }) { (error) in
             
         }
@@ -187,9 +180,6 @@ class ArticleListViewController: BaseViewController ,UITableViewDelegate,UITable
         title.isUserInteractionEnabled = true
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(self.tap(tap:)))
 //        title.addGestureRecognizer(tap)
-//        let model = ArticleDetailModel.init(dict: (self.contentArrM[section] as? Dictionary)!)
-//        title.text = "这是第\(section)分组"
-//        view.addSubview(title)
         return view
         
     }
@@ -232,16 +222,17 @@ class ArticleListViewController: BaseViewController ,UITableViewDelegate,UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let str = "section"
-        var cell = tableView.dequeueReusableCell(withIdentifier: str)
+        var cell:HomeTableViewCell? = tableView.dequeueReusableCell(withIdentifier: str) as? HomeTableViewCell
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: str)
+//            cell = HomeTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: str)
+            cell = UINib.init(nibName: "HomeTableViewCell", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? HomeTableViewCell
         }
         let model = self.contentArrM[indexPath.row] as? ArticleDetailModel
-        
-        cell?.textLabel?.text = model?.title//"这是第\(indexPath.section+1)个字段,第\(indexPath.row)个cell"
+        cell?.titleLabel?.text = model?.title//"这是第\(indexPath.section+1)个字段,第\(indexPath.row)个cell"
 //  使用SDWebImage会崩溃，目前具体原因尚不清楚
-//        cell?.imageView?.sd_setImage(with: URL.init(string: (model!.Covers[0] as! String)) as! URL)
-        cell?.imageView?.kf_setImage(imageUrlStr: (model!.Covers[0] as! String))
+//        cell?.imageView?.sd_setImage(with: URL.init(string: (model!.Covers[0] as! String)))
+        cell?.iconImgV?.kf_setImage(imageUrlStr: (model!.Covers[0] as! String))
+        cell?.iconImgV?.contentMode = UIViewContentMode.scaleAspectFit
         return cell!
     }
 
