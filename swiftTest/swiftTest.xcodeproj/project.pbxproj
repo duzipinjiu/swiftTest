@@ -78,6 +78,10 @@
 		D134B2FC1FF09E57009423FF /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = D134B2FB1FF09E57009423FF /* Localization.strings */; };
 		D14AFD9D2085ED9A00516DF6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD9B2085ED9A00516DF6 /* HomeTableViewCell.swift */; };
 		D14AFD9E2085ED9A00516DF6 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14AFD9C2085ED9A00516DF6 /* HomeTableViewCell.xib */; };
+		D14AFDA020861FA200516DF6 /* FDFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFD9F20861FA200516DF6 /* FDFeedViewController.swift */; };
+		D14AFDA220861FC900516DF6 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D14AFDA120861FC900516DF6 /* data.json */; };
+		D14AFDA42086255900516DF6 /* FDFeedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AFDA32086255900516DF6 /* FDFeedEntity.swift */; };
+		D14AFDA62086276900516DF6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14AFDA52086276800516DF6 /* Images.xcassets */; };
 		D194A6B320106C9100239A04 /* ArticleList.json in Resources */ = {isa = PBXBuildFile; fileRef = D194A6B220106C9100239A04 /* ArticleList.json */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +167,10 @@
 		D134B2FB1FF09E57009423FF /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
 		D14AFD9B2085ED9A00516DF6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		D14AFD9C2085ED9A00516DF6 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		D14AFD9F20861FA200516DF6 /* FDFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDFeedViewController.swift; sourceTree = "<group>"; };
+		D14AFDA120861FC900516DF6 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D14AFDA32086255900516DF6 /* FDFeedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDFeedEntity.swift; sourceTree = "<group>"; };
+		D14AFDA52086276800516DF6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D194A6B220106C9100239A04 /* ArticleList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ArticleList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,6 +229,7 @@
 				D134B2FB1FF09E57009423FF /* Localization.strings */,
 				0460640E1EAAE45B007161C3 /* Main.storyboard */,
 				046064111EAAE45B007161C3 /* Assets.xcassets */,
+				D14AFDA52086276800516DF6 /* Images.xcassets */,
 				046064131EAAE45B007161C3 /* LaunchScreen.storyboard */,
 				046064161EAAE45B007161C3 /* Info.plist */,
 				04F449561EFA1426005312E3 /* Class */,
@@ -306,6 +315,7 @@
 				04FAD66D1EFB57DF00849CDF /* HomeViewController.swift */,
 				04FAD80C1EFB8FCF00849CDF /* HomeDetailViewController.swift */,
 				041626111F04E1DE001F9A19 /* ArticleListViewController.swift */,
+				D14AFD9F20861FA200516DF6 /* FDFeedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,7 +328,9 @@
 				04FAD9351EFBB8C700849CDF /* ArticleListModel.swift */,
 				04FAD9361EFBB8C700849CDF /* BarnerModel.swift */,
 				04FAD9371EFBB8C700849CDF /* SpecialModel.swift */,
+				D14AFDA32086255900516DF6 /* FDFeedEntity.swift */,
 				D194A6B220106C9100239A04 /* ArticleList.json */,
+				D14AFDA120861FC900516DF6 /* data.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -582,10 +594,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04FAD6641EFB571C00849CDF /* MainJson.json in Resources */,
+				D14AFDA220861FC900516DF6 /* data.json in Resources */,
 				04F449F81EFA6A27005312E3 /* arrow_right@3x.png in Resources */,
 				046064151EAAE45B007161C3 /* LaunchScreen.storyboard in Resources */,
 				04F449F61EFA6A27005312E3 /* arrow_down@3x.png in Resources */,
 				046064121EAAE45B007161C3 /* Assets.xcassets in Resources */,
+				D14AFDA62086276900516DF6 /* Images.xcassets in Resources */,
 				04F449FA1EFA6A27005312E3 /* failure@3x.png in Resources */,
 				D134B2FC1FF09E57009423FF /* Localization.strings in Resources */,
 				046064101EAAE45B007161C3 /* Main.storyboard in Resources */,
@@ -666,10 +680,12 @@
 				04F44A001EFA6A27005312E3 /* Left.swift in Sources */,
 				04F44A031EFA6A27005312E3 /* Utils.swift in Sources */,
 				04F449741EFA17D8005312E3 /* UIDevice-Extension.swift in Sources */,
+				D14AFDA020861FA200516DF6 /* FDFeedViewController.swift in Sources */,
 				04F449D61EFA446C005312E3 /* BaseViewController.swift in Sources */,
 				0416260E1F04E10C001F9A19 /* ArticleNormalCell.swift in Sources */,
 				04FAD80D1EFB8FCF00849CDF /* HomeDetailViewController.swift in Sources */,
 				04F4496F1EFA17D8005312E3 /* String-Extension.swift in Sources */,
+				D14AFDA42086255900516DF6 /* FDFeedEntity.swift in Sources */,
 				04F449FF1EFA6A27005312E3 /* Header.swift in Sources */,
 				04FAD93B1EFBB8C700849CDF /* SpecialModel.swift in Sources */,
 				04F449FC1EFA6A27005312E3 /* ElasticRefreshControl.swift in Sources */,

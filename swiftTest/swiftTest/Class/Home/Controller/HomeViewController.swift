@@ -39,7 +39,12 @@ class HomeViewController: BaseViewController {
         // 2.确定所有的子控制器
         var childVcs = [UIViewController]()
         for a in 0..<4 {
-            let controller = ArticleListViewController()
+            if a == 1   {
+                let vc1 = FDFeedViewController()
+                childVcs.append(vc1)
+                continue
+            }
+//            let controller = ArticleListViewController()
             let vc = ArticleListViewController()
             vc.view.backgroundColor = UIColor(red: CGFloat(arc4random_uniform(255))/255.0, green: CGFloat(arc4random_uniform(255))/255.0, blue: CGFloat(arc4random_uniform(255))/255.0, alpha: 1.0)
             
